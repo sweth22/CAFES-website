@@ -1,0 +1,292 @@
+/* ---------- Base Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f0eb;
+    color: #3b2c27;
+}
+
+section {
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #3b2c27;
+    font-weight: 600;
+}
+
+
+
+/* ---------- Hero ---------- */
+.booking-hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Blurred background image layer */
+.booking-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 159, 28, 0.25),
+            rgba(255, 243, 230, 0.15)
+        ),
+        url("../images/9.jpg") center / cover no-repeat;
+    filter: blur(6px);
+    transform: scale(1.08); /* avoid blur edges */
+    z-index: 0;
+}
+
+/* Content stays sharp */
+.booking-hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Neon Title ---------- */
+.neon-title {
+    font-size: 3rem;
+    color: #fff5c4;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #ffe2a3,
+        0 0 20px #ffc75f,
+        0 0 30px #ff9f1c;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.booking-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    opacity: 0.95;
+}
+
+/* ---------- Floating Decorations ---------- */
+.float {
+    position: absolute;
+    width: 80px;
+    opacity: 0.15;
+    animation: floatAnim 6s ease-in-out infinite alternate;
+    z-index: 1; /* above background, below text */
+}
+
+.deco1 {
+    top: 120px;
+    left: 40px;
+    animation-delay: 0s;
+}
+
+.deco2 {
+    top: 200px;
+    right: 40px;
+    animation-delay: 2s;
+}
+
+/* ---------- Animation ---------- */
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+
+/* ---------- Booking Card ---------- */
+.booking-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px 5%;
+}
+
+.booking-card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 40px 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.5s ease;
+}
+
+.booking-card:hover {
+    transform: perspective(1000px) rotateY(5deg);
+}
+
+.booking-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #6a4025;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #6a4025;
+}
+
+.input-group input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #6a4025;
+    box-shadow: 0 0 8px rgba(106, 64, 37, 0.3);
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.guest-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.guest-btn {
+    background: #6a4025;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.guest-btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 25px;
+    background: #ff9f1c;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #ffc75f;
+    transform: translateY(-3px);
+}
+
+/* ---------- Popup ---------- */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popup-card {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    animation: popupAnim 0.5s ease forwards;
+}
+
+.popup-card h3 {
+    color: #6a4025;
+    margin-bottom: 15px;
+}
+
+.popup-card p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.popup-card button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #ff9f1c;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.popup-card button:hover {
+    background: #ffc75f;
+    transform: translateY(-2px);
+}
+
+@keyframes popupAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* ---------- Responsive ---------- */
+@media(max-width:768px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .float {
+        display: none;
+    }
+}

@@ -1,0 +1,163 @@
+
+/* Color system */
+:root {
+  --cream-bg: #f8efe3;
+  --deep-espresso: #2a1a16;
+  --mocha: #8b5a3c;
+  --latte: #d9b28c;
+  --pill-pink: #ff62b2;
+  --badge-gold: #b8860b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f0eb;
+    color: #3b2c27;
+}
+
+section {
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #3b2c27;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.seasonal-hero {
+  background: radial-gradient(circle at top left, #fdf4ea, #f1e0cf);
+  padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.seasonal-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .3rem .9rem;
+  border-radius: 999px;
+  background: rgba(42, 26, 22, 0.9);
+  color: #fcefe4;
+  font-size: .7rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.seasonal-hero h1 {
+  font-size: clamp(2.4rem, 3.2vw, 3.3rem);
+  letter-spacing: .12em;
+}
+
+.hero-tagline {
+  max-width: 32rem;
+  font-size: .98rem;
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: var(--deep-espresso);
+  color: #fff;
+}
+
+.btn-outline-dark {
+  border-color: var(--deep-espresso);
+  color: var(--deep-espresso);
+}
+
+.btn-dark:hover, .btn-outline-dark:hover {
+  background-color: var(--mocha);
+  border-color: var(--mocha);
+}
+
+/* Feature Chips */
+.feature-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  border-radius: 999px;
+  padding: .25rem .8rem;
+  background: rgba(34, 23, 18, 0.9);
+  color: #fbeee2;
+  font-size: .75rem;
+}
+
+.feature-chip:hover {
+  background: #000;
+}
+
+/* Menu Cards */
+.menu-card {
+  border: none;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: transform .25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Reservation Banner */
+.reservation-banner {
+  border-radius: 2rem;
+  background: linear-gradient(135deg, #2a1a16, #3b241d);
+  color: #fbeee2;
+  padding: 2.3rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.reservation-banner h3 {
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .seasonal-hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .reservation-banner {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .seasonal-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-tagline {
+    font-size: .9rem;
+  }
+
+  .feature-chip {
+    font-size: .7rem;
+    padding: .2rem .7rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seasonal-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-tagline {
+    font-size: .85rem;
+  }
+
+  .menu-card img,
+  .season-carousel .card-img-top {
+    height: 160px;
+  }
+}
+

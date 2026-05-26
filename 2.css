@@ -1,0 +1,685 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f0eb;
+    color: #3b2c27;
+}
+
+section {
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #3b2c27;
+    font-weight: 600;
+}
+/* DESSERTS PAGE - Exact Screenshot Template Match */
+.page-hero {
+    min-height: 70vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("../images/s1.jpg") center / cover no-repeat fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 3rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.page-hero h1 {
+    font-size: clamp(4rem, 9vw, 6.5rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #6a5a50 0%, #2b2018 50%, #e67e22 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    letter-spacing: -3px;
+    text-shadow: 0 0 40px #d4a574;
+    position: relative;
+}
+
+.page-hero p {
+    font-size: 1.45rem;
+    max-width: 750px;
+    opacity: 0.95;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Sections */
+.section {
+    padding: 6rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section.desserts {
+    background: linear-gradient(135deg, #faf8f5 0%, #f4ede2 50%, #f0e6d9 100%);
+}
+
+.section h2 {
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #2d1b14 0%, #8b4513 50%, #d4a574 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    position: relative;
+    letter-spacing: -1px;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4a574, transparent);
+    border-radius: 2px;
+}
+
+.section > p {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #6b564b;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    line-height: 1.8;
+}
+
+/* Dessert Cards - Screenshot Style */
+.dessert-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.dessert-card {
+    perspective: 1000px;
+    height: 300px;
+    position: relative;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.dessert-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(145deg, #fff 0%, #f8f4f0 100%);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border: 1px solid rgba(224,211,198,0.4);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(145deg, #d4a574 0%, #b5895e 100%);
+    color: #2d1b14;
+}
+
+.card-front h3 {
+    font-size: 1.7rem;
+    color: #2d1b14;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.card-front p {
+    color: #6a5a50;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.card-back ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-back li {
+    padding: 0.6rem 0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ===============================
+   GALLERY GRID
+================================ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* ===============================
+   GALLERY IMAGES
+================================ */
+.responsive-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px var(--soft-shadow);
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SHINE EFFECT */
+.responsive-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.4),
+        transparent 70%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+}
+
+.responsive-img:hover::before {
+    transform: translateX(100%);
+}
+
+.responsive-img:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(59, 43, 37, 0.28);
+}
+
+/* ===============================
+   DAILY SPECIALS SECTION
+================================ */
+.daily-specials {
+    color: #fff;
+    padding: 6rem 2rem;
+    margin: 6rem auto;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+/* GLOW LAYERS */
+.daily-specials::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255, 223, 186, 0.12), transparent 55%),
+        radial-gradient(circle at 80% 70%, rgba(207, 167, 125, 0.14), transparent 55%);
+}
+
+.daily-specials > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===============================
+   SPECIALS GRID
+================================ */
+.specials-grid {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+/* ===============================
+   SPECIAL CARD
+================================ */
+.special-card {
+    background: #fff;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.special-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.28);
+}
+
+.special-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.special-card:hover img {
+    transform: scale(1.08);
+}
+
+/* ===============================
+   CARD CONTENT
+================================ */
+.card-info {
+   
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 1.5rem;
+    color: var(--brown);
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    color: #6a5a50;
+    line-height: 1.6;
+}
+
+/* ===============================
+   SPARKLE EFFECT
+================================ */
+.sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #f6d365 0%, transparent 70%);
+    border-radius: 50%;
+    animation: sparkleAnim 2s infinite;
+}
+
+.sparkle1 { top: 25px; right: 25px; animation-delay: 0s; }
+.sparkle2 { top: 50px; left: 25px; animation-delay: 0.7s; }
+.sparkle3 { bottom: 25px; right: 45px; animation-delay: 1.4s; }
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@keyframes sparkleAnim {
+    0%, 100% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    .section {
+        padding: 3.5rem 1.5rem;
+        margin: 3rem auto;
+        border-radius: 24px;
+    }
+
+    .gallery-grid,
+    .specials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .responsive-img {
+        height: 220px;
+    }
+
+    .daily-specials {
+        padding: 4rem 1.5rem;
+        border-radius: 28px;
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    .hero {
+        min-height: 70vh;
+    }
+
+    .fav-title,
+    .gallery-title,
+    .season-title,
+    .testimonials-title {
+        font-size: 30px;
+    }
+
+    .fav-item {
+        padding: 18px 22px;
+    }
+
+    .gallery-card {
+        min-width: 220px;
+        height: 260px;
+    }
+
+    .season-box {
+        padding: 25px;
+    }
+
+    .season-text {
+        font-size: 17px;
+    }
+
+    .testimonial-card {
+        min-width: 240px;
+    }
+}
+
+@media(max-width:480px) {
+    .fav-title,
+    .gallery-title,
+    .season-title,
+    .testimonials-title {
+        font-size: 26px;
+    }
+
+    .fav-item h3 {
+        font-size: 20px;
+    }
+
+    .fav-item p {
+        font-size: 15px;
+    }
+
+    .gallery-card {
+        min-width: 190px;
+        height: 220px;
+    }
+
+    .season-box {
+        padding: 20px;
+    }
+
+    .season-text {
+        font-size: 15px;
+    }
+}
+/* Brown Nebula Glow Cards - COMPLETE MINIMIZED CSS */
+.nebula-specials {
+    padding: 70px 6%;
+    background: radial-gradient(ellipse at top, #2b2018 0%, #3a2f28 50%, #4a3a2e 100%);
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.nebula-specials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212,165,116,0.6), transparent);
+}
+
+.nebula-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.nebula-header h2 {
+    font-size: clamp(2.2rem, 4.5vw, 2.8rem);
+    background: linear-gradient(135deg, #d4a574 0%, #b8945f 50%, #8b6f47 100%);
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: -0.03em;
+    text-shadow: 0 0 40px rgba(212,165,116,0.4);
+}
+
+.nebula-header p {
+    font-size: 1.1rem;
+    color: rgba(220,200,180,0.85);
+    line-height: 1.75;
+    backdrop-filter: blur(10px);
+}
+
+.nebula-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nebula-card {
+    height: 280px;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.4));
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(212,165,116,0.4);
+    box-shadow: 
+        0 35px 120px rgba(43,32,24,0.7),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nebula-card:hover {
+    transform: translateY(-20px) scale(1.02);
+    box-shadow: 
+        0 50px 160px rgba(139,69,19,0.5),
+        0 0 60px rgba(212,165,116,0.4),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.nebula-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85) contrast(1.1);
+    transition: all 0.6s ease;
+}
+
+.nebula-card:hover img {
+    filter: brightness(1.05) contrast(1.15);
+    transform: scale(1.05);
+}
+
+.nebula-veil {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35%;
+    backdrop-filter: blur(35px);
+    padding: 20px 20px;
+    display: flex;
+    align-items: flex-end;
+    transform: translateY(100%);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nebula-card:hover .nebula-veil {
+    transform: translateY(0);
+}
+
+.card-core {
+    color: #fcefe4;
+}
+
+.card-core h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #d4a574;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    text-shadow: 0 2px 10px rgba(43,32,24,0.9);
+}
+
+.card-core p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    opacity: 0.95;
+    max-height: 2.4em;
+    overflow: hidden;
+}
+
+/* Brown Color-coded Veils */
+.cosmic-berry .nebula-veil {
+    background: linear-gradient(transparent 0%, rgba(139,69,19,0.95) 20%, rgba(43,32,24,0.98) 100%);
+}
+
+.stellar-tart .nebula-veil {
+    background: linear-gradient(transparent 0%, rgba(165,105,79,0.95) 20%, rgba(43,32,24,0.98) 100%);
+}
+
+.plasma-cake .nebula-veil {
+    background: linear-gradient(transparent 0%, rgba(101,67,33,0.95) 20%, rgba(43,32,24,0.98) 100%);
+}
+
+.nebula-particle {
+    position: absolute;
+    background: radial-gradient(circle, rgba(212,165,116,0.9) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: nebulaFloat 6s ease-in-out infinite;
+    filter: blur(1px);
+}
+
+.nebula-particle.p1 {
+    top: 15%;
+    left: 10%;
+    width: 6px;
+    height: 6px;
+    animation-delay: 0s;
+}
+
+.nebula-particle.p2 {
+    top: 25%;
+    right: 12%;
+    width: 4px;
+    height: 4px;
+    animation-delay: -2s;
+}
+
+.nebula-particle.p3 {
+    bottom: 20%;
+    left: 20%;
+    width: 5px;
+    height: 5px;
+    animation-delay: -4s;
+}
+
+@keyframes nebulaFloat {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+    33% { transform: translateY(-15px) scale(1.3); opacity: 0.9; }
+    66% { transform: translateY(8px) scale(0.8); opacity: 0.4; }
+}
+
+.nebula-grid::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 2px;
+    height: 2px;
+    background: rgba(212,165,116,0.6);
+    border-radius: 50%;
+    animation: dustTwinkle 8s ease-in-out infinite;
+}
+
+@keyframes dustTwinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.5); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .nebula-grid { gap: 22px; }
+}
+
+@media (max-width: 768px) {
+    .nebula-specials { padding: 50px 4%; }
+    .nebula-grid { 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .nebula-card { height: 240px; }
+    .nebula-veil { padding: 16px 16px; height: 32%; }
+}
+
+@media (max-width: 480px) {
+    .nebula-grid { 
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .nebula-card { height: 260px; }
+}
+/* 50% Smaller Title + Compact Background */
+.nebula-header h2 {
+    font-size: clamp(1.1rem, 2.25vw, 1.4rem); /* 50% REDUCED from 2.2rem-2.8rem */
+}
+
+.nebula-header p {
+    font-size: 0.95rem; /* Reduced from 1.1rem */
+    margin-bottom: 12px; /* Tighter spacing */
+}
+
+.nebula-header {
+    margin-bottom: 30px; /* Reduced from 40px */
+}
+
+/* Reduced Background Size */
+.nebula-specials {
+    padding: 50px 6%; /* Reduced from 70px */
+    min-height: 75vh; /* Reduced from 90vh */
+    background: radial-gradient(ellipse at top, #2b2018 0%, #3a2f28 40%, #4a3a2e 100%); /* Tighter gradient */
+}
+
+.nebula-specials::before {
+    height: 0.5px; /* Thinner accent line */
+}
+
+
+
