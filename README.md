@@ -174,7 +174,7 @@ Example:
 
 Frontend Developer Intern
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/sweth22
 
 ---
 
