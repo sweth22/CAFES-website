@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Story — CAFES</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<!-- =========================
+      CUSTOM NAVBAR
+========================= -->
+
+<nav class="cafe-navbar">
+
+    <!-- Logo -->
+    <div class="cafe-navbar-left">
+        <a class="cafe-logo" href="index.html">
+            CAFES
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="cafe-menu">
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Home</a>
+
+            <ul class="cafe-submenu">
+               <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Menu</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="menu-signature.html">Signature Drinks</a></li>
+                <li><a href="menu-desserts.html">Desserts</a></li>
+                <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Locations</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="locations-city.html">City Cafe</a></li>
+                 <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">About</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="about-story.html">Our Story</a></li>
+                <li><a href="about-roasting.html">Roasting Process</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Gallery</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="gallery-interior.html">Interior</a></li>
+                <li><a href="gallery-dishes.html">Dishes</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Contact</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="contact-booking.html">Table Booking</a></li>
+                <li><a href="contact-careers.html">Careers</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Order Button -->
+    <button class="cafe-order-btn">
+        Order
+    </button>
+
+    <!-- Mobile Menu -->
+    <button class="cafe-menu-btn"
+        onclick="toggleSidebar()">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- =========================
+        MOBILE SIDEBAR
+========================= -->
+
+<aside id="cafeSidebar"
+       class="cafe-sidebar">
+
+    <button
+        class="cafe-close"
+        onclick="toggleSidebar()">
+        ×
+    </button>
+
+    <ul class="cafe-sidebar-menu">
+
+        <li class="sidebar-heading">
+            Home
+        </li>
+
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+
+        <li class="sidebar-heading">
+            Menu
+        </li>
+
+        <li><a href="menu-signature.html">Signature Drinks</a></li>
+        <li><a href="menu-desserts.html">Desserts</a></li>
+       
+
+        <li class="sidebar-heading">
+            Locations
+        </li>
+
+        <li><a href="locations-city.html">City Cafe</a></li>
+         <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+     
+
+        <li class="sidebar-heading">
+            About
+        </li>
+
+        <li><a href="about-story.html">Our Story</a></li>
+         <li><a href="about-roasting.html">Roasting Process</a></li>
+
+        <li class="sidebar-heading">
+            Gallery
+        </li>
+
+        <li><a href="gallery-interior.html">Interior</a></li>
+        <li><a href="gallery-dishes.html">Dishes</a></li>
+
+        <li class="sidebar-heading">
+            Contact
+        </li>
+
+        <li><a href="contact-booking.html">
+            Table Booking
+        </a></li>
+
+        <li><a href="contact-careers.html">
+            Careers
+        </a></li>
+
+    </ul>
+
+</aside>
+
+
+<!-- =========================
+        SIDEBAR SCRIPT
+========================= -->
+
+<script>
+function toggleSidebar() {
+    document
+        .getElementById("cafeSidebar")
+        .classList
+        .toggle("active");
+
+    document
+        .body
+        .classList
+        .toggle("menu-open");
+}
+</script>
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="interior-hero">
+      <div class="interior-hero-inner">
+        <div class="interior-hero-copy">
+          <span class="pill">Our Story</span>
+          <h1 class="fade-in-up">From <span>dreams</span> to daily brews.</h1>
+          <p class="fade-in-up">How City Café became a cornerstone of the community.</p>
+          <div class="interior-hero-meta">
+            <span>Founded 2010</span>
+            <span>Community-driven</span>
+            <span>Local ingredients</span>
+          </div>
+          <button class="interior-scroll-btn">Explore More</button>
+        </div>
+        <div class="interior-hero-gallery">
+          <div class="hero-stack hero-img-1 float-up">
+            <img src="images/w4.jpg" alt="Story 1">
+          </div>
+          <div class="hero-stack hero-img-2 float-up delay-1">
+            <img src="images/w1.jpg" alt="Story 2">
+          </div>
+          <div class="hero-stack hero-img-3 float-up delay-2">
+            <img src="images/sweet.png" alt="Story 3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mood Pills -->
+    <section class="interior-moods">
+      <span class="mood-pill">Community</span>
+      <span class="mood-pill">Coffee</span>
+      <span class="mood-pill">Art</span>
+      <span class="mood-pill">Sustainability</span>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="interior-timeline">
+      <h2>Our Journey</h2>
+      <div class="timeline-row">
+        <div class="timeline-step fade-in-up">
+          <span class="time-pill">2010</span>
+          <p>Founded by two friends passionate about coffee and community.</p>
+        </div>
+        <div class="timeline-step fade-in-up">
+          <span class="time-pill">2015</span>
+          <p>Expanded to three locations, bringing warmth to more neighborhoods.</p>
+        </div>
+        <div class="timeline-step fade-in-up">
+          <span class="time-pill">2020</span>
+          <p>Introduced sustainable sourcing and community events.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="interior-grid-section">
+      <h2 class="section-title">Meet Our Team</h2>
+      <p class="section-subtitle">The faces behind your daily brew.</p>
+      <div class="interior-grid">
+        <div class="interior-card fade-in-up">
+          <div class="interior-img-wrap">
+            <img src="images/111.jpg" alt="Team 1">
+          </div>
+          <div class="interior-info">
+            <h4>Alex</h4>
+            <p>Barista & Coffee Enthusiast</p>
+          </div>
+        </div>
+        <div class="interior-card fade-in-up">
+          <div class="interior-img-wrap">
+            <img src="images/3.jpg" alt="Team 2">
+          </div>
+          <div class="interior-info">
+            <h4>Jamie</h4>
+            <p>Pastry Chef</p>
+          </div>
+        </div>
+        <div class="interior-card fade-in-up">
+          <div class="interior-img-wrap">
+            <img src="images/m.avif" alt="Team 3">
+          </div>
+          <div class="interior-info">
+            <h4>Taylor</h4>
+            <p>Community Manager</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cafe Testimonials Section -->
+    <section class="cafe-testimonials">
+      <div class="testimonials-container">
+        <h2 class="testimonials-title">What Our Community Says</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="card-outer">
+              <div class="card-inner">
+                <div class="testimonial-content">
+                  <p>"City Café is my go-to spot for a peaceful morning coffee and warm conversations."</p>
+                </div>
+                <div class="avatar-container">
+                  <div class="avatar-circle">
+                    <img src="images/sarah.jpg" alt="Sarah">
+                  </div>
+                  <div class="author-info">
+                    <span class="author-name">Sarah</span>
+                    <span class="author-role">Regular Customer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="card-outer">
+              <div class="card-inner">
+                <div class="testimonial-content">
+                  <p>"Their community events bring the neighborhood together with amazing coffee and vibes."</p>
+                </div>
+                <div class="avatar-container">
+                  <div class="avatar-circle">
+                    <img src="images/h.jpg" alt="anu">
+                  </div>
+                  <div class="author-info">
+                    <span class="author-name">James</span>
+                    <span class="author-role">Local Artist</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Timeline Section -->
+<section class="events-timeline-area">
+    <div class="timeline-container">
+        <header class="timeline-header">
+            <h2 class="timeline-heading">Upcoming Events</h2>
+            <p class="timeline-desc">Join us for live music, art nights, and community gatherings!</p>
+        </header>
+        
+        <div class="timeline-path">
+            <div class="timeline-line"></div>
+            <div class="timeline-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        
+        <div class="timeline-events">
+            <div class="timeline-event left-event">
+                <div class="event-marker">
+                    <span class="marker-day">13</span>
+                    <span class="marker-month">DEC</span>
+                </div>
+                <div class="event-panel">
+                    <h3>Live Music Night</h3>
+                    <div class="event-details">
+                        <time>Friday • 7 PM</time>
+                        <span class="event-type">🎵 Music</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event right-event">
+                <div class="event-marker">
+                    <span class="marker-day">14</span>
+                    <span class="marker-month">DEC</span>
+                </div>
+                <div class="event-panel">
+                    <h3>Art Exhibition</h3>
+                    <div class="event-details">
+                        <time>Saturday • 4 PM</time>
+                        <span class="event-type">🎨 Art</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event left-event">
+                <div class="event-marker">
+                    <span class="marker-day">15</span>
+                    <span class="marker-month">DEC</span>
+                </div>
+                <div class="event-panel">
+                    <h3>Community Bake Sale</h3>
+                    <div class="event-details">
+                        <time>Sunday • 11 AM</time>
+                        <span class="event-type">🍰 Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <section class="coffee-showcase">
+  <div class="container">
+    <div class="coffee-card animate-on-scroll">
+
+      <h2 class="coffee-title">
+        We Provide <br> quality coffee to deliver
+      </h2>
+
+      <p class="coffee-subtitle">
+        Boost your productivity and build your mood with a short break in the most
+        comfortable place. Enjoy our coffee with a smile.
+      </p>
+
+      <div class="row justify-content-center coffee-images">
+        <div class="col-md-4 col-sm-10 mb-4">
+          <div class="img-box animate-on-scroll">
+            <img src="images/coffee-1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-10 mb-4">
+          <div class="img-box center animate-on-scroll">
+            <img src="images/coffee-2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-10 mb-4">
+          <div class="img-box animate-on-scroll">
+            <img src="images/coffee-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Panorama Section -->
+    <section class="interior-panorama">
+      <div class="panorama-img" style="background-image: url('images/r1.jpg');"></div>
+      <div class="panorama-overlay">
+        <h2>Cinematic Experience</h2>
+        <p>Step into the heart of our café culture.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER (same as all pages) -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">CAFES</div>
+          <p class="small">Handcrafted desserts & specialty coffee.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <p class="small">Instagram • Facebook • X</p>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> CAFES — All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (load once) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+      /* ------------------------------
+         FOOTER YEAR
+      ------------------------------ */
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      /* ------------------------------
+         SCROLL REVEAL (.fade-in-up)
+      ------------------------------ */
+      const revealEls = document.querySelectorAll('.fade-in-up');
+
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+
+        revealEls.forEach(el => io.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      }
+
+      /* ------------------------------
+         MOOD PILL ANIMATION
+      ------------------------------ */
+      const moodPills = document.querySelectorAll('.mood-pill');
+
+      moodPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pill.classList.remove('pulse');
+          void pill.offsetWidth;
+          pill.classList.add('pulse');
+        });
+      });
+
+      /* ------------------------------
+         PARALLAX ROAST STRIP
+      ------------------------------ */
+      const roastStrip = document.querySelector('.parallax-roast');
+
+      if (roastStrip) {
+        window.addEventListener('scroll', () => {
+          const y = window.scrollY * 0.15;
+          roastStrip.style.transform = `scale(1.08) translateY(${y}px)`;
+        });
+      }
+
+      /* ------------------------------
+         MOBILE HAMBURGER MENU
+      ------------------------------ */
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          mobileMenu.classList.toggle('active');
+        });
+      }
+
+      /* ------------------------------
+         SIDEBAR TOGGLE
+      ------------------------------ */
+      function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar) {
+          sidebar.classList.toggle('active');
+        }
+      }
+
+      // Make function available globally
+      window.toggleSidebar = toggleSidebar;
+    </script>
+  </body>
+
+</html>

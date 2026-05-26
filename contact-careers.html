@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CAFES — Careers</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- =========================
+      CUSTOM NAVBAR
+========================= -->
+
+<nav class="cafe-navbar">
+
+    <!-- Logo -->
+    <div class="cafe-navbar-left">
+        <a class="cafe-logo" href="index.html">
+            CAFES
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="cafe-menu">
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Home</a>
+
+            <ul class="cafe-submenu">
+               <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Menu</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="menu-signature.html">Signature Drinks</a></li>
+                <li><a href="menu-desserts.html">Desserts</a></li>
+               
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Locations</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="locations-city.html">City Cafe</a></li>
+                <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+           
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">About</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="about-story.html">Our Story</a></li>
+                <li><a href="about-roasting.html">Roasting Process</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Gallery</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="gallery-interior.html">Interior</a></li>
+                <li><a href="gallery-dishes.html">Dishes</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Contact</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="contact-booking.html">Table Booking</a></li>
+                <li><a href="contact-careers.html">Careers</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Order Button -->
+    <button class="cafe-order-btn">
+        Order
+    </button>
+
+    <!-- Mobile Menu -->
+    <button class="cafe-menu-btn"
+        onclick="toggleSidebar()">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- =========================
+        MOBILE SIDEBAR
+========================= -->
+
+<aside id="cafeSidebar"
+       class="cafe-sidebar">
+
+    <button
+        class="cafe-close"
+        onclick="toggleSidebar()">
+        ×
+    </button>
+
+    <ul class="cafe-sidebar-menu">
+
+        <li class="sidebar-heading">
+            Home
+        </li>
+
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+
+        <li class="sidebar-heading">
+            Menu
+        </li>
+
+        <li><a href="menu-signature.html">Signature Drinks</a></li>
+        <li><a href="menu-desserts.html">Desserts</a></li>
+        
+
+        <li class="sidebar-heading">
+            Locations
+        </li>
+
+        <li><a href="locations-city.html">City Cafe</a></li>
+        <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+
+
+        <li class="sidebar-heading">
+            About
+        </li>
+
+        <li><a href="about-story.html">Our Story</a></li>
+        <li><a href="about-roasting.html">Roasting Process</a></li>
+
+        <li class="sidebar-heading">
+            Gallery
+        </li>
+
+        <li><a href="gallery-interior.html">Interior</a></li>
+        <li><a href="gallery-dishes.html">Dishes</a></li>
+
+        <li class="sidebar-heading">
+            Contact
+        </li>
+
+        <li><a href="contact-booking.html">
+            Table Booking
+        </a></li>
+
+        <li><a href="contact-careers.html">
+            Careers
+        </a></li>
+
+    </ul>
+
+</aside>
+
+
+<!-- =========================
+        SIDEBAR SCRIPT
+========================= -->
+
+<script>
+function toggleSidebar() {
+    document
+        .getElementById("cafeSidebar")
+        .classList
+        .toggle("active");
+
+    document
+        .body
+        .classList
+        .toggle("menu-open");
+}
+</script>
+
+
+
+  <!-- HERO: animated gradient + spotlight -->
+  <header class="careers-hero">
+    <div class="careers-hero-bg"></div>
+
+    <div class="careers-hero-grid">
+      <div class="careers-hero-copy">
+        <span class="pill">Work at CAFES</span>
+        <h1>Brew moments, not just coffee.</h1>
+        <p>Join a team that cares about every cup, every guest, and every tiny detail.</p>
+
+        <div class="careers-tags">
+          <span>Warm team</span>
+          <span>Growth sessions</span>
+          <span>Free coffee</span>
+          <span>Staff tastings</span>
+        </div>
+      </div>
+
+      <div class="careers-hero-orbit">
+        <div class="orbit-ring orbit-ring--outer"></div>
+        <div class="orbit-ring orbit-ring--inner"></div>
+
+        <div class="orbit-label orbit-label--one">
+          <span>Baristas</span>
+        </div>
+        <div class="orbit-label orbit-label--two">
+          <span>Pastry</span>
+        </div>
+        <div class="orbit-label orbit-label--three">
+          <span>Hosts</span>
+        </div>
+
+        <div class="orbit-core">
+          <span>CAFES Crew</span>
+          <small>Now brewing new roles</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CULTURE HIGHLIGHTS -->
+  <section class="culture-section">
+    <h2>Life behind the counter</h2>
+    <p class="culture-sub">A quick taste of what it feels like to wear the CAFES apron.</p>
+
+    <div class="culture-grid">
+      <article class="culture-card animate-on-scroll">
+        <div class="culture-icon">☕</div>
+        <h3>Coffee education</h3>
+        <p>Weekly cupping sessions and brew classes to level up your barista game.</p>
+      </article>
+
+      <article class="culture-card animate-on-scroll">
+        <div class="culture-icon">🤝</div>
+        <h3>Supportive team</h3>
+        <p>Shift leads that coach, not shout — and teammates who have your back.</p>
+      </article>
+
+      <article class="culture-card animate-on-scroll">
+        <div class="culture-icon">📈</div>
+        <h3>Room to grow</h3>
+        <p>Move from barista to lead, trainer, or café manager with clear paths.</p>
+      </article>
+
+      <article class="culture-card animate-on-scroll">
+        <div class="culture-icon">🎉</div>
+        <h3>Moments that matter</h3>
+        <p>Launch nights, latte‑art jams, and cozy staff hangouts after close.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- OPEN ROLES + INTERACTIVE TABS -->
+  <section class="roles-section">
+    <div class="roles-header">
+      <h2>Open roles</h2>
+      <p>Pick a role to see what your day could look like.</p>
+    </div>
+
+    <div class="roles-layout">
+      <aside class="role-tabs">
+        <button class="role-tab active" data-role="barista">Barista</button>
+        <button class="role-tab" data-role="pastry">Pastry Chef</button>
+        <button class="role-tab" data-role="host">Guest Host</button>
+        <button class="role-tab" data-role="manager">Café Manager</button>
+      </aside>
+
+      <article class="role-detail">
+        <div class="role-detail-inner" id="role-barista">
+          <h3>Barista</h3>
+          <p>You live for the sound of steaming milk and the smell of fresh espresso.</p>
+          <ul>
+            <li>Craft espresso drinks and recommend desserts.</li>
+            <li>Keep the bar spotless and flowing smoothly.</li>
+            <li>Make regulars feel like they’re at home.</li>
+          </ul>
+          <span class="badge">Full‑time · Part‑time · Evenings</span>
+        </div>
+
+        <div class="role-detail-inner hidden" id="role-pastry">
+          <h3>Pastry Chef</h3>
+          <p>Early mornings, warm ovens, and recipes that bring people back.</p>
+          <ul>
+            <li>Prepare cakes, tarts, cookies, and seasonal specials.</li>
+            <li>Collaborate with baristas on perfect pairings.</li>
+            <li>Help style the dessert display each day.</li>
+          </ul>
+          <span class="badge">Full‑time · Morning shifts</span>
+        </div>
+
+        <div class="role-detail-inner hidden" id="role-host">
+          <h3>Guest Host</h3>
+          <p>You’re the first smile guests see when they walk through the door.</p>
+          <ul>
+            <li>Welcome guests, guide them to seats, and manage light queues.</li>
+            <li>Support takeaway and online order pickups.</li>
+            <li>Help keep the space calm, cozy, and inviting.</li>
+          </ul>
+          <span class="badge">Part‑time · Weekends</span>
+        </div>
+
+        <div class="role-detail-inner hidden" id="role-manager">
+          <h3>Café Manager</h3>
+          <p>Lead the crew, own the vibe, and keep operations running smoothly.</p>
+          <ul>
+            <li>Coach and schedule the team for smooth, fun shifts.</li>
+            <li>Oversee stock, suppliers, and daily quality checks.</li>
+            <li>Bring ideas for events, partnerships, and improvements.</li>
+          </ul>
+          <span class="badge">Full‑time · Leadership</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- APPLICATION PANEL -->
+  <section class="careers-apply">
+    <div class="apply-card">
+      <h2>Apply in a minute</h2>
+      <p>Drop a few details and we’ll get back to you as soon as a shift opens.</p>
+
+      <form class="apply-form">
+        <div class="field-row">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" type="text" required placeholder="Your full name" />
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" type="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="c-role">Role you’re interested in</label>
+            <select id="c-role" required>
+              <option value="">Select a role</option>
+              <option>Barista</option>
+              <option>Pastry Chef</option>
+              <option>Guest Host</option>
+              <option>Café Manager</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-location">Preferred location</label>
+            <select id="c-location" required>
+              <option value="">Select</option>
+              <option>City Café</option>
+              <option>Riverside Café</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Availability</label>
+          <div class="chip-row">
+            <button type="button" class="chip selected" data-value="mornings">Mornings</button>
+            <button type="button" class="chip" data-value="evenings">Evenings</button>
+            <button type="button" class="chip" data-value="weekends">Weekends</button>
+            <button type="button" class="chip" data-value="flexible">Flexible</button>
+          </div>
+          <input type="hidden" id="c-availability" value="mornings">
+        </div>
+
+        <div class="field">
+          <label for="c-notes">Tell us about yourself</label>
+          <textarea id="c-notes" rows="3"
+            placeholder="Coffee experience, favourite drink, why you’d love to join CAFES…"></textarea>
+        </div>
+
+        <button type="submit" class="btn primary btn-apply">
+          <span>Send application</span>
+          <span class="btn-glow"></span>
+        </button>
+
+        <p class="small-note">You’ll receive an email confirmation as soon as we receive your application.</p>
+      </form>
+    </div>
+
+    <aside class="apply-side">
+      <div class="pulse-dot"></div>
+      <h3>What happens next?</h3>
+      <ol>
+        <li>Our team reviews your application within a few days.</li>
+        <li>If there’s a match, we’ll invite you for a coffee chat at the café.</li>
+        <li>You’ll do a short trial shift to feel the pace and the people.</li>
+      </ol>
+      <p class="tiny">No pressure, no formal suits — just real conversations over good coffee.</p>
+    </aside>
+  </section>
+
+  <!-- FOOTER (same as all pages) -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">CAFES</div>
+        <p class="small">Handcrafted desserts & specialty coffee.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p class="small">Instagram • Facebook • X</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> CAFES — All rights reserved.
+    </div>
+  </footer>
+  <!-- 1. Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 2. Your Custom JS -->
+  <script>
+
+    /* ----------------------------------------------------
+       CHIP SELECTION — Generic Function
+    ---------------------------------------------------- */
+    function activateChips(selector, hiddenInputId, summaryId = null) {
+      const chips = document.querySelectorAll(selector);
+      const hiddenInput = document.getElementById(hiddenInputId);
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('selected'));
+          chip.classList.add('selected');
+
+          hiddenInput.value = chip.dataset.value;
+
+          if (summaryId) {
+            document.getElementById(summaryId).textContent = chip.textContent;
+          }
+        });
+      });
+    }
+
+    // Booking zone chips
+    activateChips(".chip.zone", "zone", "sum-zone");
+
+    // Availability chips (career form)
+    activateChips(".chip.availability", "c-availability");
+
+
+    /* ----------------------------------------------------
+       LIVE SUMMARY UPDATES — Booking Page
+    ---------------------------------------------------- */
+    const nameInput = document.getElementById('name');
+    const guestsSel = document.getElementById('guests');
+    const dateInput = document.getElementById('date');
+    const timeInput = document.getElementById('time');
+    const notesInput = document.getElementById('notes');
+
+    if (nameInput) {
+      nameInput.addEventListener('input', () => {
+        document.getElementById('sum-name').textContent =
+          nameInput.value || 'Guest';
+      });
+    }
+
+    if (guestsSel) {
+      guestsSel.addEventListener('change', () => {
+        document.getElementById('sum-guests').textContent =
+          guestsSel.value || '2';
+      });
+    }
+
+    if (dateInput) {
+      dateInput.addEventListener('change', () => {
+        document.getElementById('sum-date').textContent =
+          dateInput.value || 'Pick a date';
+      });
+    }
+
+    if (timeInput) {
+      timeInput.addEventListener('change', () => {
+        document.getElementById('sum-time').textContent =
+          timeInput.value || 'Pick a time';
+      });
+    }
+
+    if (notesInput) {
+      notesInput.addEventListener('input', () => {
+        document.getElementById('sum-notes').textContent =
+          notesInput.value || 'We’ll make it special.';
+      });
+    }
+
+
+    /* ----------------------------------------------------
+       SCROLL REVEAL ANIMATION
+    ---------------------------------------------------- */
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 120) {
+          el.classList.add('animated');
+        }
+      });
+    });
+
+
+    /* ----------------------------------------------------
+       FORM SUBMIT — For Booking Page
+    ---------------------------------------------------- */
+    const bookingForm = document.querySelector('.booking-form');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Thanks! Your table request has been captured.');
+      });
+    }
+
+
+    /* ----------------------------------------------------
+       MOBILE HAMBURGER MENU
+    ---------------------------------------------------- */
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (hamburger) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+    }
+
+
+    /* ----------------------------------------------------
+       SIDEBAR TOGGLE
+    ---------------------------------------------------- */
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+    window.toggleSidebar = toggleSidebar; // Make global
+
+
+    /* ----------------------------------------------------
+       CAREERS PAGE — ROLE TABS
+    ---------------------------------------------------- */
+    const tabs = document.querySelectorAll('.role-tab');
+    const panels = {
+      barista: document.getElementById('role-barista'),
+      pastry: document.getElementById('role-pastry'),
+      host: document.getElementById('role-host'),
+      manager: document.getElementById('role-manager')
+    };
+
+    if (tabs.length > 0) {
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const key = tab.dataset.role;
+
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          Object.values(panels).forEach(p => p.classList.add('hidden'));
+          panels[key].classList.remove('hidden');
+        });
+      });
+    }
+
+
+    /* ----------------------------------------------------
+       CAREERS PAGE — FORM SUBMIT
+    ---------------------------------------------------- */
+    const careerForm = document.querySelector('.apply-form');
+    if (careerForm) {
+      careerForm.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Thanks for applying to CAFES! We’ll be in touch soon.');
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>

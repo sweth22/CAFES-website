@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAFES — Table Booking</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- =========================
+      CUSTOM NAVBAR
+========================= -->
+
+<nav class="cafe-navbar">
+
+    <!-- Logo -->
+    <div class="cafe-navbar-left">
+        <a class="cafe-logo" href="index.html">
+            CAFES
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="cafe-menu">
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Home</a>
+
+            <ul class="cafe-submenu">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Menu</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="menu-signature.html">Signature Drinks</a></li>
+                <li><a href="menu-desserts.html">Desserts</a></li>
+             
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Locations</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="locations-city.html">City Cafe</a></li>
+                <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">About</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="about-story.html">Our Story</a></li>
+                 <li><a href="about-roasting.html">Roasting Process</a></li>
+              
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Gallery</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="gallery-interior.html">Interior</a></li>
+                <li><a href="gallery-dishes.html">Dishes</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Contact</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="contact-booking.html">Table Booking</a></li>
+                <li><a href="contact-careers.html">Careers</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Order Button -->
+    <button class="cafe-order-btn">
+        Order
+    </button>
+
+    <!-- Mobile Menu -->
+    <button class="cafe-menu-btn"
+        onclick="toggleSidebar()">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- =========================
+        MOBILE SIDEBAR
+========================= -->
+
+<aside id="cafeSidebar"
+       class="cafe-sidebar">
+
+    <button
+        class="cafe-close"
+        onclick="toggleSidebar()">
+        ×
+    </button>
+
+    <ul class="cafe-sidebar-menu">
+
+        <li class="sidebar-heading">
+            Home
+        </li>
+
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+
+        <li class="sidebar-heading">
+            Menu
+        </li>
+
+        <li><a href="menu-signature.html">Signature Drinks</a></li>
+        <li><a href="menu-desserts.html">Desserts</a></li>
+     
+
+        <li class="sidebar-heading">
+            Locations
+        </li>
+
+        <li><a href="locations-city.html">City Cafe</a></li>
+        <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+       
+
+        <li class="sidebar-heading">
+            About
+        </li>
+
+        <li><a href="about-story.html">Our Story</a></li>
+        <li><a href="about-roasting.html">Roasting Process</a></li>
+
+        <li class="sidebar-heading">
+            Gallery
+        </li>
+
+        <li><a href="gallery-interior.html">Interior</a></li>
+        <li><a href="gallery-dishes.html">Dishes</a></li>
+
+        <li class="sidebar-heading">
+            Contact
+        </li>
+
+        <li><a href="contact-booking.html">
+            Table Booking
+        </a></li>
+
+        <li><a href="contact-careers.html">
+            Careers
+        </a></li>
+
+    </ul>
+
+</aside>
+
+
+<!-- =========================
+        SIDEBAR SCRIPT
+========================= -->
+
+<script>
+function toggleSidebar() {
+    document
+        .getElementById("cafeSidebar")
+        .classList
+        .toggle("active");
+
+    document
+        .body
+        .classList
+        .toggle("menu-open");
+}
+</script>
+
+
+    <!-- HERO / INTRO -->
+    <header class="booking-hero">
+
+        <div class="booking-hero-content">
+            <span class="pill">Reserve your moment</span>
+            <h1>Book the perfect table for your next coffee story.</h1>
+            <p>Pick a time, choose your vibe, and we’ll have your table ready with a warm welcome.</p>
+        </div>
+
+        <div class="booking-hero-visual">
+            <div class="orbit">
+                <div class="orbit-circle orbit-1"></div>
+                <div class="orbit-circle orbit-2"></div>
+                <div class="orbit-bean bean-1"></div>
+                <div class="orbit-bean bean-2"></div>
+                <div class="orbit-bean bean-3"></div>
+            </div>
+            <div class="orbit-center">
+                <span>CAFES</span>
+                <small>Tonight at?</small>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3-STEP ICONIC SUMMARY -->
+    <section class="booking-steps">
+        <div class="step-card animate-on-scroll">
+            <div class="step-icon">
+                <span>1</span>
+            </div>
+            <h3>Choose your vibe</h3>
+            <p>Window seat, bar stool, or a quiet corner — tell us where you feel most at home.</p>
+        </div>
+        <div class="step-card animate-on-scroll">
+            <div class="step-icon">
+                <span>2</span>
+            </div>
+            <h3>Set date & time</h3>
+            <p>Pick the perfect moment for catch‑ups, deep work, or late‑night desserts.</p>
+        </div>
+        <div class="step-card animate-on-scroll">
+            <div class="step-icon">
+                <span>3</span>
+            </div>
+            <h3>Arrive & enjoy</h3>
+            <p>Your table is reserved, coffee is brewing, and dessert is waiting.</p>
+        </div>
+    </section>
+
+    <!-- BOOKING PANEL -->
+    <main class="booking-panel">
+        <section class="booking-form-wrap">
+            <h2>Book a table</h2>
+            <p class="sub">Answer a few quick questions and we’ll confirm by email or SMS.</p>
+
+            <form class="booking-form">
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="tel" placeholder="+91 98765 43210" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="guests">Guests</label>
+                        <select id="guests" required>
+                            <option value="">Select</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3–4</option>
+                            <option>5–6</option>
+                            <option>7–10</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="date">Date</label>
+                        <input id="date" type="date" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="time">Time</label>
+                        <input id="time" type="time" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Preferred zone</label>
+
+                    <div class="chip-row">
+                        <button type="button" class="chip selected" data-value="window">Window</button>
+                        <button type="button" class="chip" data-value="sofa">Sofa corner</button>
+                        <button type="button" class="chip" data-value="outdoor">Outdoor</button>
+                        <button type="button" class="chip" data-value="bar">Bar counter</button>
+                    </div>
+
+                    <input type="hidden" id="zone" name="zone" value="window">
+                </div>
+
+
+                <div class="field">
+                    <label for="notes">Occasion or notes</label>
+                    <textarea id="notes" rows="3"
+                        placeholder="Birthday, date night, study session… tell us anything!"></textarea>
+                </div>
+
+                <button type="submit" class="btn primary btn-book">
+                    <span>Confirm reservation</span>
+                    <span class="btn-glow"></span>
+                </button>
+
+                <p class="small-note">By booking, you agree to arrive within 15 minutes of your selected time.</p>
+            </form>
+        </section>
+
+        <!-- RIGHT: LIVE SUMMARY CARD -->
+        <aside class="booking-summary">
+            <h3>Your visit snapshot</h3>
+            <div class="summary-card">
+                <p class="summary-line"><strong>Name:</strong> <span id="sum-name">Guest</span></p>
+                <p class="summary-line"><strong>Guests:</strong> <span id="sum-guests">2</span></p>
+                <p class="summary-line"><strong>Date:</strong> <span id="sum-date">Pick a date</span></p>
+                <p class="summary-line"><strong>Time:</strong> <span id="sum-time">Pick a time</span></p>
+                <p class="summary-line"><strong>Zone:</strong> <span id="sum-zone">Window</span></p>
+                <p class="summary-line"><strong>Occasion:</strong> <span id="sum-notes">We’ll make it special.</span>
+                </p>
+            </div>
+
+            <div class="summary-footer">
+                <span class="dot"></span>
+                <span>We’ll send a confirmation shortly after you hit “Confirm reservation”.</span>
+            </div>
+        </aside>
+    </main>
+    <!-- FOOTER (same as all pages) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">CAFES</div>
+                <p class="small">Handcrafted desserts & specialty coffee.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="highlights.html">Highlights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p class="small">Instagram • Facebook • X</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © <span id="year"></span> CAFES — All rights reserved.
+        </div>
+    </footer>
+
+    <!-- 1. Bootstrap JS (must be first) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 2. Your custom JS (separate tag) -->
+    <script>
+
+        /* ----------------------------------------------------
+           CHIP SELECTION + SUMMARY UPDATE
+        ---------------------------------------------------- */
+        const chips = document.querySelectorAll('.chip');
+        const zoneInput = document.getElementById('zone');
+
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                chips.forEach(c => c.classList.remove('selected'));
+                chip.classList.add('selected');
+                zoneInput.value = chip.dataset.value;
+                document.getElementById('sum-zone').textContent = chip.textContent;
+            });
+        });
+
+        /* ----------------------------------------------------
+           LIVE SUMMARY UPDATES
+        ---------------------------------------------------- */
+        const nameInput = document.getElementById('name');
+        const guestsSel = document.getElementById('guests');
+        const dateInput = document.getElementById('date');
+        const timeInput = document.getElementById('time');
+        const notesInput = document.getElementById('notes');
+
+        nameInput.addEventListener('input', () => {
+            document.getElementById('sum-name').textContent =
+                nameInput.value || 'Guest';
+        });
+
+        guestsSel.addEventListener('change', () => {
+            document.getElementById('sum-guests').textContent =
+                guestsSel.value || '2';
+        });
+
+        dateInput.addEventListener('change', () => {
+            document.getElementById('sum-date').textContent =
+                dateInput.value || 'Pick a date';
+        });
+
+        timeInput.addEventListener('change', () => {
+            document.getElementById('sum-time').textContent =
+                timeInput.value || 'Pick a time';
+        });
+
+        notesInput.addEventListener('input', () => {
+            document.getElementById('sum-notes').textContent =
+                notesInput.value || 'We’ll make it special.';
+        });
+
+        /* ----------------------------------------------------
+           SCROLL ANIMATION
+        ---------------------------------------------------- */
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('animated');
+                }
+            });
+        });
+
+        /* ----------------------------------------------------
+           FORM SUBMIT
+        ---------------------------------------------------- */
+        document.querySelector('.booking-form').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Thanks! Your table request has been captured.');
+        });
+
+        /* ----------------------------------------------------
+           MOBILE HAMBURGER + SIDEBAR
+        ---------------------------------------------------- */
+
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        });
+
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAFES — Roasting Process</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+      CUSTOM NAVBAR
+========================= -->
+
+<nav class="cafe-navbar">
+
+    <!-- Logo -->
+    <div class="cafe-navbar-left">
+        <a class="cafe-logo" href="index.html">
+            CAFES
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="cafe-menu">
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Home</a>
+
+            <ul class="cafe-submenu">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Menu</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="menu-signature.html">Signature Drinks</a></li>
+                <li><a href="menu-desserts.html">Desserts</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Locations</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="locations-city.html">City Cafe</a></li>
+                 <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+               
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">About</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="about-story.html">Our Story</a></li>
+                <li><a href="about-roasting.html">Roasting Process</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Gallery</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="gallery-interior.html">Interior</a></li>
+                <li><a href="gallery-dishes.html">Dishes</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Contact</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="contact-booking.html">Table Booking</a></li>
+                <li><a href="contact-careers.html">Careers</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Order Button -->
+    <button class="cafe-order-btn">
+        Order
+    </button>
+
+    <!-- Mobile Menu -->
+    <button class="cafe-menu-btn"
+        onclick="toggleSidebar()">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- =========================
+        MOBILE SIDEBAR
+========================= -->
+
+<aside id="cafeSidebar"
+       class="cafe-sidebar">
+
+    <button
+        class="cafe-close"
+        onclick="toggleSidebar()">
+        ×
+    </button>
+
+    <ul class="cafe-sidebar-menu">
+
+        <li class="sidebar-heading">
+            Home
+        </li>
+
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+
+        <li class="sidebar-heading">
+            Menu
+        </li>
+
+        <li><a href="menu-signature.html">Signature Drinks</a></li>
+        <li><a href="menu-desserts.html">Desserts</a></li>
+        
+
+        <li class="sidebar-heading">
+            Locations
+        </li>
+
+        <li><a href="locations-city.html">City Cafe</a></li>
+         <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+        
+
+        <li class="sidebar-heading">
+            About
+        </li>
+
+        <li><a href="about-story.html">Our Story</a></li>
+        <li><a href="about-roasting.html">Roasting Process</a></li>
+
+        <li class="sidebar-heading">
+            Gallery
+        </li>
+
+        <li><a href="gallery-interior.html">Interior</a></li>
+        <li><a href="gallery-dishes.html">Dishes</a></li>
+
+        <li class="sidebar-heading">
+            Contact
+        </li>
+
+        <li><a href="contact-booking.html">
+            Table Booking
+        </a></li>
+
+        <li><a href="contact-careers.html">
+            Careers
+        </a></li>
+
+    </ul>
+
+</aside>
+
+
+<!-- =========================
+        SIDEBAR SCRIPT
+========================= -->
+
+<script>
+function toggleSidebar() {
+    document
+        .getElementById("cafeSidebar")
+        .classList
+        .toggle("active");
+
+    document
+        .body
+        .classList
+        .toggle("menu-open");
+}
+</script>
+
+
+    <!-- ROASTING HERO -->
+    <header class="roast-hero">
+        <div class="roast-hero-inner">
+            <div class="roast-hero-copy fade-in-up">
+                <span class="pill">CAFES • ROASTING</span>
+                <h1>FIRE, TIMING,<br><span>AND TINY DETAILS.</span></h1>
+                <p>Every batch is roasted in small drums to bring out sweetness,
+                    balance, and the character of each origin.</p>
+                <div class="roast-tags">
+                    <span>Small-batch</span>
+                    <span>Profiled roasts</span>
+                    <span>Fresh every week</span>
+                </div>
+            </div>
+
+            <div class="roast-hero-visual">
+                <div class="roast-orbit roast-orbit-outer">
+                    <img src="images/r1.jpg" alt="Raw green coffee beans">
+                </div>
+                <div class="roast-orbit roast-orbit-middle">
+                    <img src="images/r.jpg" alt="Roasting coffee drum">
+                </div>
+                <div class="roast-orbit roast-orbit-inner">
+                    <img src="images/r2.jpg" alt="Freshly roasted beans">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ROASTING STAGES TIMELINE -->
+    <section class="roast-stages">
+        <h2>STAGES OF THE ROAST</h2>
+        <p class="roast-subtitle">From pale green to deep mahogany.</p>
+
+        <div class="roast-stage-row">
+            <article class="roast-stage-card fade-in-up">
+                <span class="stage-pill">1 • DRYING</span>
+                <h3>Green to Straw</h3>
+                <p>Moisture escapes and the beans move from pale green to light straw in color.</p>
+            </article>
+
+            <article class="roast-stage-card fade-in-up delay-1">
+                <span class="stage-pill">2 • MAILLARD</span>
+                <h3>Sweetness Builds</h3>
+                <p>Complex browning reactions develop sweetness, body, and bread‑like aromas.</p>
+            </article>
+
+            <article class="roast-stage-card fade-in-up delay-2">
+                <span class="stage-pill">3 • FIRST CRACK</span>
+                <h3>Beans Expand</h3>
+                <p>The beans audibly crack as they expand, marking the start of drinkable roasts.</p>
+            </article>
+
+            <article class="roast-stage-card fade-in-up delay-3">
+                <span class="stage-pill">4 • DEVELOPMENT</span>
+                <h3>Dialed for CAFES</h3>
+                <p>Heat is adjusted to balance chocolate, fruit, and caramel notes for our menu.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ROASTING PROFILE CARDS -->
+    <section class="roast-profiles">
+        <h2>OUR ROASTING PROFILES</h2>
+        <div class="roast-profile-grid">
+            <article class="roast-profile-card fade-in-up">
+                <div class="profile-top profile-light"></div>
+                <div class="profile-body">
+                    <h3>Light Roast</h3>
+                    <p>Citrus, florals, higher acidity; used for pour‑overs and filter brews.</p>
+                    <span class="profile-tag">Best for: Filter bar</span>
+                </div>
+            </article>
+
+            <article class="roast-profile-card fade-in-up delay-1">
+                <div class="profile-top profile-medium"></div>
+                <div class="profile-body">
+                    <h3>Medium Roast</h3>
+                    <p>Balanced sweetness and body; our everyday choice for milk coffees.</p>
+                    <span class="profile-tag">Best for: Lattes & cappuccinos</span>
+                </div>
+            </article>
+
+            <article class="roast-profile-card fade-in-up delay-2">
+                <div class="profile-top profile-dark"></div>
+                <div class="profile-body">
+                    <h3>Dark Roast</h3>
+                    <p>Lower acidity, bold chocolate and smoke notes for intense espresso shots.</p>
+                    <span class="profile-tag">Best for: Espresso tonic & mochas</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ROASTER STRIP (IMAGE + TEXT SCROLL) -->
+    <section class="roast-strip">
+        <div class="roast-strip-img parallax-roast" style="background-image: url('images/r.jpg');"></div>
+
+        <div class="roast-strip-overlay">
+            <h2>ROASTED IN SMALL DRUMS, NEVER RUSHED.</h2>
+            <p>We log every batch, track temperature curves, and cup daily to keep each bag consistent.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER (same as all pages) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">CAFES</div>
+                <p class="small">Handcrafted desserts & specialty coffee.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="highlights.html">Highlights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p class="small">Instagram • Facebook • X</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © <span id="year"></span> CAFES — All rights reserved.
+        </div>
+    </footer>
+
+    <!-- 1. Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 2. Your Custom JS -->
+    <script>
+
+        /* ----------------------------------------------------
+           FOOTER YEAR
+        ---------------------------------------------------- */
+        const yearEl = document.getElementById('year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+
+        /* ----------------------------------------------------
+           SCROLL REVEAL (.fade-in-up)
+        ---------------------------------------------------- */
+        const roastRevealEls = document.querySelectorAll('.fade-in-up');
+
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('is-visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            roastRevealEls.forEach(el => io.observe(el));
+        } else {
+            roastRevealEls.forEach(el => el.classList.add('is-visible'));
+        }
+
+        /* ----------------------------------------------------
+           PARALLAX FOR ROAST STRIP
+        ---------------------------------------------------- */
+        const roastStrip = document.querySelector('.parallax-roast');
+        if (roastStrip) {
+            window.addEventListener('scroll', () => {
+                const y = window.scrollY * 0.15;
+                roastStrip.style.transform = `scale(1.08) translateY(${y}px)`;
+            });
+        }
+
+        /* ----------------------------------------------------
+           MOBILE HAMBURGER
+        ---------------------------------------------------- */
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                mobileMenu.classList.toggle("active");
+            });
+        }
+
+        /* ----------------------------------------------------
+           SIDEBAR TOGGLE
+        ---------------------------------------------------- */
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+        window.toggleSidebar = toggleSidebar;
+
+    </script>
+
+</body>
+
+</html>

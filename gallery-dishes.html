@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAFES — Dishes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- =========================
+      CUSTOM NAVBAR
+========================= -->
+
+<nav class="cafe-navbar">
+
+    <!-- Logo -->
+    <div class="cafe-navbar-left">
+        <a class="cafe-logo" href="index.html">
+            CAFES
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="cafe-menu">
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Home</a>
+
+            <ul class="cafe-submenu">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Menu</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="menu-signature.html">Signature Drinks</a></li>
+                <li><a href="menu-desserts.html">Desserts</a></li>
+               
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Locations</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="locations-city.html">City Cafe</a></li>
+                <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+     
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">About</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="about-story.html">Our Story</a></li>
+                <li><a href="about-roasting.html">Roasting Process</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Gallery</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="gallery-interior.html">Interior</a></li>
+                <li><a href="gallery-dishes.html">Dishes</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Contact</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="contact-booking.html">Table Booking</a></li>
+                <li><a href="contact-careers.html">Careers</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Order Button -->
+    <button class="cafe-order-btn">
+        Order
+    </button>
+
+    <!-- Mobile Menu -->
+    <button class="cafe-menu-btn"
+        onclick="toggleSidebar()">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- =========================
+        MOBILE SIDEBAR
+========================= -->
+
+<aside id="cafeSidebar"
+       class="cafe-sidebar">
+
+    <button
+        class="cafe-close"
+        onclick="toggleSidebar()">
+        ×
+    </button>
+
+    <ul class="cafe-sidebar-menu">
+
+        <li class="sidebar-heading">
+            Home
+        </li>
+
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+
+        <li class="sidebar-heading">
+            Menu
+        </li>
+
+        <li><a href="menu-signature.html">Signature Drinks</a></li>
+        <li><a href="menu-desserts.html">Desserts</a></li>
+       
+
+        <li class="sidebar-heading">
+            Locations
+        </li>
+
+        <li><a href="locations-city.html">City Cafe</a></li>
+        <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+       
+
+        <li class="sidebar-heading">
+            About
+        </li>
+
+        <li><a href="about-story.html">Our Story</a></li>
+        <li><a href="about-roasting.html">Roasting Process</a></li>
+
+        <li class="sidebar-heading">
+            Gallery
+        </li>
+
+        <li><a href="gallery-interior.html">Interior</a></li>
+        <li><a href="gallery-dishes.html">Dishes</a></li>
+
+        <li class="sidebar-heading">
+            Contact
+        </li>
+
+        <li><a href="contact-booking.html">
+            Table Booking
+        </a></li>
+
+        <li><a href="contact-careers.html">
+            Careers
+        </a></li>
+
+    </ul>
+
+</aside>
+
+
+<!-- =========================
+        SIDEBAR SCRIPT
+========================= -->
+
+<script>
+function toggleSidebar() {
+    document
+        .getElementById("cafeSidebar")
+        .classList
+        .toggle("active");
+
+    document
+        .body
+        .classList
+        .toggle("menu-open");
+}
+</script>
+
+
+
+
+
+   <!-- Enhanced Floating Dish Portal Hero -->
+<section class="dish-portal-hero">
+    <div class="portal-backdrop">
+        <!-- Main Portal -->
+        <div class="dish-portal-core">
+            <div class="portal-frame"></div>
+            <div class="portal-light"></div>
+            <img src="images/sweet.png" alt="Signature dessert" class="main-dish">
+            <div class="dish-label">Featured</div>
+        </div>
+        
+        <!-- Enhanced Content Stack -->
+        <div class="portal-content">
+            <div class="taste-header">
+                <div class="taste-badge">DISCOVER DISHES</div>
+                <h1>DISHES TO<br><span>PERFECT</span></h1>
+                <h1>YOUR MOMENT</h1>
+            </div>
+            
+            <p class="hero-description">Artisan plates crafted to complement your coffee ritual. Velvety desserts, hearty brunches, and seasonal specialties.</p>
+            
+            <div class="portal-search">
+                <input type="text" placeholder="Search dishes (tiramisu, pancakes, pasta...)" />
+                <button class="search-trigger">Find</button>
+            </div>
+            
+            <div class="quality-marks">
+                <span class="mark-item">🍰 Freshly baked</span>
+                <span class="mark-item">☕ Coffee paired</span>
+                <span class="mark-item">👨‍🍳 Chef crafted</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- STRIP OF DISH CATEGORIES -->
+    <section class="dish-strip slide-in">
+        <div class="dish-pill">BRUNCH PLATES</div>
+        <div class="dish-pill">PASTAS</div>
+        <div class="dish-pill">FLATBREADS</div>
+        <div class="dish-pill">SALADS</div>
+        <div class="dish-pill">SIGNATURE DESSERTS</div>
+        <div class="dish-pill">SMALL BITES</div>
+        <div class="dish-pill">PLATED SWEETS</div>
+    </section>
+
+    <!-- FEATURED DISHES GRID -->
+    <section class="section dishes-grid-section">
+        <h2>OUR SIGNATURE DISHES</h2>
+        <p>Pair any of these with your favorite espresso, latte, or slow brew for the ultimate CAFES experience.</p>
+
+        <div class="dishes-grid">
+            <article class="dish-card fade-in-up">
+                <div class="dish-img-wrap">
+                    <img src="images/v.jpg" alt="Truffle Scrambled Toast">
+                </div>
+                <div class="dish-info">
+                    <h3>Truffle Scrambled Toast</h3>
+                    <p>Soft scrambled eggs, truffle drizzle, toasted sourdough, and microgreens.</p>
+                    <span class="dish-tag">Best with: Flat White</span>
+                </div>
+            </article>
+
+            <article class="dish-card fade-in-up delay-1">
+                <div class="dish-img-wrap">
+                    <img src="images/v2.jpg" alt="Roasted Veggie Flatbread">
+                </div>
+                <div class="dish-info">
+                    <h3>Roasted Veggie Flatbread</h3>
+                    <p>Charred peppers, olives, feta, and basil on a crisp stone‑baked base.</p>
+                    <span class="dish-tag">Best with: Cold Brew</span>
+                </div>
+            </article>
+
+            <article class="dish-card fade-in-up delay-2">
+                <div class="dish-img-wrap">
+                    <img src="images/v3.webp" alt="Café Tiramisu Jar">
+                </div>
+                <div class="dish-info">
+                    <h3>Café Tiramisu Jar</h3>
+                    <p>Espresso‑soaked ladyfingers, mascarpone cream, cocoa dust, jar‑served.</p>
+                    <span class="dish-tag">Best with: Espresso</span>
+                </div>
+            </article>
+
+            <article class="dish-card fade-in-up delay-3">
+                <div class="dish-img-wrap">
+                    <img src="images/v4.jpg" alt="Molten Chocolate Cake">
+                </div>
+                <div class="dish-info">
+                    <h3>Molten Chocolate Cake</h3>
+                    <p>Warm center, vanilla gelato, and caramel shard for the perfect finish.</p>
+                    <span class="dish-tag">Best with: Cappuccino</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CHEF HIGHLIGHT SECTION -->
+    <section class="chef-highlight">
+        <div class="chef-media fade-in-up">
+            <img src="images/111.jpg" alt="Head chef">
+        </div>
+        <div class="chef-copy fade-in-up delay-1">
+            <h2>MEET THE CHEF</h2>
+            <p>Our dishes are designed to feel like a warm conversation—comforting, layered, and memorable.</p>
+            <ul>
+                <li>Seasonal menus inspired by local markets.</li>
+                <li>House‑made sauces, dressings, and reductions.</li>
+                <li>Desserts plated to match our signature coffee profiles.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PAIRING STRIP -->
+    <section class="pairing-strip">
+        <h2>Coffee & Dish Pairings</h2>
+        <div class="pairing-row">
+            <div class="pairing-card fade-in-up">
+                <h3>Flat White × Truffle Toast</h3>
+                <p>Creamy milk balances the richness of truffle & eggs.</p>
+            </div>
+            <div class="pairing-card fade-in-up delay-1">
+                <h3>Cold Brew × Veggie Flatbread</h3>
+                <p>Bright, iced coffee cuts through roasted veggies.</p>
+            </div>
+            <div class="pairing-card fade-in-up delay-2">
+                <h3>Espresso × Tiramisu Jar</h3>
+                <p>Classic Italian pairing with bold coffee notes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISHES SLIDER (CHEF’S ROTATING PLATES) -->
+    <section class="elite-collection dishes-slider">
+        <h2 class="slider-title">CHEF’S ROTATING PLATES</h2>
+        <p class="slider-subtitle">Limited‑time dishes that rotate every few weeks. Try them before they’re gone.</p>
+
+        <div class="elite-scroll" id="dishScroll">
+            <div class="elite-item">
+                <img src="images/dish5.jpg" alt="">
+                <h4>Smoked Tomato Bruschetta</h4>
+                <p>Charred sourdough, basil oil, balsamic pearls.</p>
+            </div>
+            <div class="elite-item">
+                <img src="images/dish6.jpg" alt="">
+                <h4>Maple Almond Pancakes</h4>
+                <p>Fluffy stacks with roasted nuts and syrup.</p>
+            </div>
+            <div class="elite-item">
+                <img src="images/dish7.jpg" alt="">
+                <h4>Garlic Herb Fries</h4>
+                <p>Crispy, herbed, and parmesan‑dusted.</p>
+            </div>
+            <div class="elite-item">
+                <img src="images/dish8.jpg" alt="">
+                <h4>Spiced Chickpea Bowl</h4>
+                <p>Warm grains, roasted veggies, tahini drizzle.</p>
+            </div>
+        </div>
+        <button class="scroll-btn left" onclick="scrollDishes('left')">‹</button>
+        <button class="scroll-btn right" onclick="scrollDishes('right')">›</button>
+    </section>
+
+    <!-- CUSTOMER REVIEWS FOR DISHES -->
+    <section class="dish-reviews">
+        <h2>Guests Love Our Plates</h2>
+        <div class="reviews-row">
+            <article class="review-card fade-in-up">
+                <p class="quote">“The truffle toast and flat white is my weekend ritual now.”</p>
+                <span class="name">— Aanya</span>
+            </article>
+            <article class="review-card fade-in-up delay-1">
+                <p class="quote">“Tiramisu jar + espresso shot is the perfect late‑night combo.”</p>
+                <span class="name">— Rohan</span>
+            </article>
+            <article class="review-card fade-in-up delay-2">
+                <p class="quote">“Loved how every dish feels curated to match their coffee menu.”</p>
+                <span class="name">— Meera</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">CAFES</div>
+                <p class="small">Handcrafted desserts & specialty coffee.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="highlights.html">Highlights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p class="small">Instagram • Facebook • X</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © <span id="year"></span> CAFES — All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 2. Your custom JS (separate tag) -->
+    <script>
+
+
+        /* ----------------------------------------------------
+           MOBILE HAMBURGER + SIDEBAR
+        ---------------------------------------------------- */
+
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        });
+
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function scrollToInteriorGrid() {
+            const el = document.getElementById('interior-grid');
+            if (!el) return;
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Simple scroll reveal for .fade-in-up
+        const revealEls = document.querySelectorAll('.fade-in-up');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('is-visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            revealEls.forEach(el => io.observe(el));
+        } else {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        }
+
+        // Optional: click mood pills to “ping”
+        const moodPills = document.querySelectorAll('.mood-pill');
+        moodPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pill.classList.remove('pulse');
+                void pill.offsetWidth; // restart animation
+                pill.classList.add('pulse');
+            });
+        });
+
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function scrollDishes(direction) {
+            const container = document.getElementById('dishScroll');
+            const scrollAmount = 300;
+            if (direction === 'left') {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+</body>
+
+</html>

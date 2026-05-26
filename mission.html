@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Aroma | Our Mission</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =========================
+      CUSTOM NAVBAR
+========================= -->
+
+<nav class="cafe-navbar">
+
+    <!-- Logo -->
+    <div class="cafe-navbar-left">
+        <a class="cafe-logo" href="index.html">
+            CAFES
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="cafe-menu">
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Home</a>
+
+            <ul class="cafe-submenu">
+               <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Menu</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="menu-signature.html">Signature Drinks</a></li>
+                <li><a href="menu-desserts.html">Desserts</a></li>
+              
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Locations</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="locations-city.html">City Cafe</a></li>
+                <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+               
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">About</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="about-story.html">Our Story</a></li>
+                <li><a href="about-roasting.html">Roasting Process</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Gallery</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="gallery-interior.html">Interior</a></li>
+                <li><a href="gallery-dishes.html">Dishes</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Contact</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="contact-booking.html">Table Booking</a></li>
+                <li><a href="contact-careers.html">Careers</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Order Button -->
+    <button class="cafe-order-btn">
+        Order
+    </button>
+
+    <!-- Mobile Menu -->
+    <button class="cafe-menu-btn"
+        onclick="toggleSidebar()">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- =========================
+        MOBILE SIDEBAR
+========================= -->
+
+<aside id="cafeSidebar"
+       class="cafe-sidebar">
+
+    <button
+        class="cafe-close"
+        onclick="toggleSidebar()">
+        ×
+    </button>
+
+    <ul class="cafe-sidebar-menu">
+
+        <li class="sidebar-heading">
+            Home
+        </li>
+
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+
+        <li class="sidebar-heading">
+            Menu
+        </li>
+
+        <li><a href="menu-signature.html">Signature Drinks</a></li>
+        <li><a href="menu-desserts.html">Desserts</a></li>
+       
+
+        <li class="sidebar-heading">
+            Locations
+        </li>
+
+        <li><a href="locations-city.html">City Cafe</a></li>
+        <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+     
+
+        <li class="sidebar-heading">
+            About
+        </li>
+
+        <li><a href="about-story.html">Our Story</a></li>
+        <li><a href="about-roasting.html">Roasting Process</a></li>
+
+        <li class="sidebar-heading">
+            Gallery
+        </li>
+
+        <li><a href="gallery-interior.html">Interior</a></li>
+        <li><a href="gallery-dishes.html">Dishes</a></li>
+
+        <li class="sidebar-heading">
+            Contact
+        </li>
+
+        <li><a href="contact-booking.html">
+            Table Booking
+        </a></li>
+
+        <li><a href="contact-careers.html">
+            Careers
+        </a></li>
+
+    </ul>
+
+</aside>
+
+
+<!-- =========================
+        SIDEBAR SCRIPT
+========================= -->
+
+<script>
+function toggleSidebar() {
+    document
+        .getElementById("cafeSidebar")
+        .classList
+        .toggle("active");
+
+    document
+        .body
+        .classList
+        .toggle("menu-open");
+}
+</script>
+
+
+  <section class="brew-hero-x9">
+    <div class="brew-hero-inner-x9">
+
+      <!-- LEFT CONTENT -->
+      <div class="brew-copy-x9">
+        <span class="brew-eyebrow-x9">Since 2012</span>
+
+        <h1 class="brew-title-x9">
+          Espresso Yourself
+        </h1>
+
+        <p class="brew-desc-x9">
+          Pure coffee, pure community, pure experience.
+          Handcrafted brews made to elevate every moment.
+        </p>
+
+        <div class="brew-actions-x9">
+          <a href="gallery-dishes.html" class="brew-btn-x9 primary">Order Now</a>
+          <a href="gallery-interior.html" class="brew-btn-x9 outline">Explore Menu</a>
+        </div>
+      </div>
+
+      <!-- RIGHT VISUAL -->
+      <div class="brew-visual-x9">
+
+        <div class="brew-card-x9">
+          <div class="brew-cup-x9">
+            <img src="images/s1.jpg" alt="Latte">
+          </div>
+          <h4>Coffee Latte</h4>
+          <span>⭐ 4.5 · 160 ml</span>
+
+          <div class="brew-card-bottom-x9">
+            <strong>$25.60</strong>
+            <button>+</button>
+          </div>
+        </div>
+
+        <div class="brew-card-x9 shift">
+          <div class="brew-cup-x9">
+            <img src="images/w2.jpg" alt="Cappuccino">
+          </div>
+          <h4>Cappuccino</h4>
+          <span>⭐ 4.6 · 160 ml</span>
+
+          <div class="brew-card-bottom-x9">
+            <strong>$27.50</strong>
+            <button>+</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="a1">
+  <div class="a2">
+    <img src="images/q.jpg" alt="Premium Coffee Pour" class="a3">
+  </div>
+  
+  <div class="a4">
+    <div class="a5">
+      <h3 class="a6">Our Coffee Mission</h3>
+      <p class="a7">Sourcing premium Arabica & Robusta from Tamil Nadu hills. Ethical farming, rich flavors, perfect brews.</p>
+    </div>
+    
+    <div class="a8">
+      <div class="a9 arabica">
+        <div class="a10"></div>
+        <div class="a11">Arabica Spc</div>
+        <div class="a12">₹185</div>
+      </div>
+      <div class="a9 villai">
+        <div class="a10"></div>
+        <div class="a11">Villai Tyn</div>
+        <div class="a12">₹185</div>
+      </div>
+      <div class="a9 cafe">
+        <div class="a10"></div>
+        <div class="a11">Café Almond</div>
+        <div class="a12">₹185</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- SECTION 1 -->
+  <section class="coffee-mission cm-section">
+    <div class="cm-container">
+      <div class="cm-row">
+        <div class="cm-col cm-col-img">
+          <img src="images/winter.jpg" class="cm-img cm-img-animate" alt="">
+        </div>
+        <div class="cm-col cm-col-text">
+          <h2 class="cm-title">Why We Exist</h2>
+          <p class="cm-text">
+            At Café Aroma, our mission is simple — to bring warmth, comfort, and unforgettable coffee experiences.
+            Coffee is more than a drink; it's a moment, a break, a connection between people and memories.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="coffee-mission cm-section cm-reverse">
+    <div class="cm-container">
+      <div class="cm-row">
+        <div class="cm-col cm-col-img">
+          <img src="images/3.jpg" class="cm-img cm-img-animate" alt="">
+        </div>
+        <div class="cm-col cm-col-text">
+          <h2 class="cm-title">Our Philosophy</h2>
+          <p class="cm-text">
+            We source high-quality beans, roast with passion, serve with love. Every batch blends craftsmanship,
+            tradition, and innovation for richer, smoother cups.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- SECTION 3 - Core Values -->
+  <section class="cafe-values cv-section">
+    <div class="cv-container text-center">
+      <h2 class="cv-main-title">Our Core Values</h2>
+
+      <div class="cv-grid">
+        <div class="cv-value-card cv-quality slide-up">
+          <div class="cv-icon">☕</div>
+          <h3 class="cv-value-title">Quality</h3>
+          <p class="cv-value-text">From bean to brew, we never compromise on excellence.</p>
+        </div>
+
+        <div class="cv-value-card cv-community slide-up delay-1">
+          <div class="cv-icon">🤎</div>
+          <h3 class="cv-value-title">Community</h3>
+          <p class="cv-value-text">We create spaces for people to meet, share, and grow together.</p>
+        </div>
+
+        <div class="cv-value-card cv-experience slide-up delay-2">
+          <div class="cv-icon">✨</div>
+          <h3 class="cv-value-title">Experience</h3>
+          <p class="cv-value-text">Every visit feels warm, welcoming, and memorable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER (same as all pages) -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">CAFES</div>
+        <p class="small">Handcrafted desserts & specialty coffee.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p class="small">Instagram • Facebook • X</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> CAFES — All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    // -------------------------------
+    // Footer Year
+    // -------------------------------
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    // -------------------------------
+    // Zoom-in Images on Scroll
+    // -------------------------------
+    const images = document.querySelectorAll('.mission-img');
+    function revealImages() {
+      const windowHeight = window.innerHeight;
+      images.forEach(img => {
+        const top = img.getBoundingClientRect().top;
+        if (top < windowHeight - 100) {
+          img.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealImages);
+    window.addEventListener('load', revealImages);
+
+    // -------------------------------
+    // Reveal Sections on Scroll
+    // -------------------------------
+    const reveals = document.querySelectorAll('.reveal');
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      reveals.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < windowHeight - 100) {
+          section.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // -------------------------------
+    // Mobile Dropdown Toggle
+    // -------------------------------
+    function toggleDropdown(el) {
+      const dropdown = el.nextElementSibling;
+      const arrow = el.querySelector('.arrow');
+      if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+        arrow.classList.remove('open');
+      } else {
+        dropdown.style.display = 'block';
+        arrow.classList.add('open');
+      }
+    }
+
+    // -------------------------------
+    // Mobile Hamburger Menu
+    // -------------------------------
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (hamburger) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+    }
+
+    // -------------------------------
+    // Sidebar Toggle
+    // -------------------------------
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      if (sidebar) sidebar.classList.toggle("active");
+    }
+    window.toggleSidebar = toggleSidebar;
+
+    // -------------------------------
+    // Scroll Reveal for .fade-in-up (using IntersectionObserver)
+    // -------------------------------
+    const roastRevealEls = document.querySelectorAll('.fade-in-up');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      roastRevealEls.forEach(el => io.observe(el));
+    } else {
+      roastRevealEls.forEach(el => el.classList.add('is-visible'));
+    }
+
+    // -------------------------------
+    // Parallax Effect for Roast Strip
+    // -------------------------------
+    const roastStrip = document.querySelector('.parallax-roast');
+    if (roastStrip) {
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY * 0.15;
+        roastStrip.style.transform = `scale(1.08) translateY(${y}px)`;
+      });
+    }
+  </script>

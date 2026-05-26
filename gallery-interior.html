@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAFES — Interior</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- =========================
+      CUSTOM NAVBAR
+========================= -->
+
+<nav class="cafe-navbar">
+
+    <!-- Logo -->
+    <div class="cafe-navbar-left">
+        <a class="cafe-logo" href="index.html">
+            CAFES
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="cafe-menu">
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Home</a>
+
+            <ul class="cafe-submenu">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Menu</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="menu-signature.html">Signature Drinks</a></li>
+                <li><a href="menu-desserts.html">Desserts</a></li>
+          
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Locations</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="locations-city.html">City Cafe</a></li>
+                <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+           
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">About</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="about-story.html">Our Story</a></li>
+                <li><a href="about-roasting.html">Roasting Process</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Gallery</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="gallery-interior.html">Interior</a></li>
+                <li><a href="gallery-dishes.html">Dishes</a></li>
+            </ul>
+        </li>
+
+        <li class="cafe-dropdown">
+            <a class="cafe-link">Contact</a>
+
+            <ul class="cafe-submenu">
+                <li><a href="contact-booking.html">Table Booking</a></li>
+                <li><a href="contact-careers.html">Careers</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Order Button -->
+    <button class="cafe-order-btn">
+        Order
+    </button>
+
+    <!-- Mobile Menu -->
+    <button class="cafe-menu-btn"
+        onclick="toggleSidebar()">
+        ☰
+    </button>
+
+</nav>
+
+
+<!-- =========================
+        MOBILE SIDEBAR
+========================= -->
+
+<aside id="cafeSidebar"
+       class="cafe-sidebar">
+
+    <button
+        class="cafe-close"
+        onclick="toggleSidebar()">
+        ×
+    </button>
+
+    <ul class="cafe-sidebar-menu">
+
+        <li class="sidebar-heading">
+            Home
+        </li>
+
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+
+        <li class="sidebar-heading">
+            Menu
+        </li>
+
+        <li><a href="menu-signature.html">Signature Drinks</a></li>
+        <li><a href="menu-desserts.html">Desserts</a></li>
+      
+
+        <li class="sidebar-heading">
+            Locations
+        </li>
+
+        <li><a href="locations-city.html">City Cafe</a></li>
+        <li><a href="menu-seasonal.html">Seasonal Specials</a></li>
+       
+
+        <li class="sidebar-heading">
+            About
+        </li>
+
+        <li><a href="about-story.html">Our Story</a></li>
+        <li><a href="about-roasting.html">Roasting Process</a></li>
+
+        <li class="sidebar-heading">
+            Gallery
+        </li>
+
+        <li><a href="gallery-interior.html">Interior</a></li>
+        <li><a href="gallery-dishes.html">Dishes</a></li>
+
+        <li class="sidebar-heading">
+            Contact
+        </li>
+
+        <li><a href="contact-booking.html">
+            Table Booking
+        </a></li>
+
+        <li><a href="contact-careers.html">
+            Careers
+        </a></li>
+
+    </ul>
+
+</aside>
+
+
+<!-- =========================
+        SIDEBAR SCRIPT
+========================= -->
+
+<script>
+function toggleSidebar() {
+    document
+        .getElementById("cafeSidebar")
+        .classList
+        .toggle("active");
+
+    document
+        .body
+        .classList
+        .toggle("menu-open");
+}
+</script>
+
+
+
+
+
+    <!-- INTERIOR HERO: split layout with big typography -->
+    <header class="interior-hero">
+        <div class="interior-hero-inner">
+            <div class="interior-hero-copy fade-in-up">
+                <span className="pill">CAFES • INTERIOR</span>
+                <h1>SPACES<br><span>BREWED</span> FOR<br>COMFORT.</h1>
+                <p>Soft light, textured walls, and cozy corners designed to make every coffee feel like home.</p>
+
+                <div class="interior-hero-meta">
+                    <span>Warm lighting •</span>
+                    <span>Community tables •</span>
+                    <span>Window nooks</span>
+                </div>
+
+                <button class="interior-scroll-btn" onclick="scrollToInteriorGrid()">
+                    Explore our spaces ↓
+                </button>
+            </div>
+
+            <div class="interior-hero-gallery">
+                <div class="hero-stack hero-img-1 float-up">
+                    <img src="images/c5.jpg" alt="Cozy café corner">
+                </div>
+                <div class="hero-stack hero-img-2 float-up delay-1">
+                    <img src="images/cafe.jpg" alt="Bar counter">
+                </div>
+                <div class="hero-stack hero-img-3 float-up delay-2">
+                    <img src="images/cafe.webp" alt="Window seating">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- INTERIOR MOODS STRIP -->
+    <section class="interior-moods">
+        <div class="mood-pill">MORNING LIGHT</div>
+        <div class="mood-pill">AFTERNOON WORK</div>
+        <div class="mood-pill">EVENING GLOW</div>
+        <div class="mood-pill">COZY CORNERS</div>
+        <div class="mood-pill">BAR SEATS</div>
+    </section>
+
+    <!-- INTERIOR GRID – staggered layout -->
+    <section id="interior-grid" class="interior-grid-section">
+        <h2 class="section-title">INTERIOR SNAPSHOTS</h2>
+        <p class="section-subtitle">
+            A mix of textures, tones, and seating that changes through the day.
+        </p>
+
+        <div class="interior-grid">
+            <article class="interior-card fade-in-up">
+                <div class="interior-img-wrap">
+                    <img src="images/2.jpg" alt="Sunlit table by the window">
+                </div>
+                <div class="interior-info">
+                    <h3>Window Nook</h3>
+                    <p>Perfect for solo coffee rituals with a book and soft natural light.</p>
+                </div>
+            </article>
+
+            <article class="interior-card fade-in-up delay-1">
+                <div class="interior-img-wrap">
+                    <img src="images/c1.jpg" alt="Community table">
+                </div>
+                <div class="interior-info">
+                    <h3>Community Table</h3>
+                    <p>Shared space for laptops, sketches, and conversations.</p>
+                </div>
+            </article>
+
+            <article class="interior-card fade-in-up delay-2">
+                <div class="interior-img-wrap">
+                    <img src="images/9.jpg" alt="Café bar">
+                </div>
+                <div class="interior-info">
+                    <h3>Bar & Brew Bar</h3>
+                    <p>Watch every pour, pull, and swirl from the best seats in the house.</p>
+                </div>
+            </article>
+
+            <article class="interior-card fade-in-up delay-3">
+                <div class="interior-img-wrap">
+                    <img src="images/3.jpg" alt="Soft seating corner">
+                </div>
+                <div class="interior-info">
+                    <h3>Soft Lounge</h3>
+                    <p>Cushioned chairs and low tables for long conversations.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- TIMELINE STRIP – how the café feels over a day -->
+    <section class="interior-timeline">
+        <h2>ONE DAY INSIDE CAFES</h2>
+        <div class="timeline-row">
+            <div class="timeline-step fade-in-up">
+                <span class="time-pill">8 AM</span>
+                <h3>First Light</h3>
+                <p>Golden reflections on the bar and quiet window nooks.</p>
+            </div>
+            <div class="timeline-step fade-in-up delay-1">
+                <span class="time-pill">1 PM</span>
+                <h3>Work & Laptops</h3>
+                <p>Community tables buzzing with ideas and soft background playlists.</p>
+            </div>
+            <div class="timeline-step fade-in-up delay-2">
+                <span class="time-pill">7 PM</span>
+                <h3>Evening Glow</h3>
+                <p>Warm lamps, dimmed lights, and slow conversation over dessert.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANORAMIC STRIP (fake parallax) -->
+    <section class="interior-panorama">
+        <div class="panorama-img" style="background-image: url('images/background.jpg');"></div>
+        <div class="panorama-overlay">
+            <h2>EVERY ANGLE FEELS LIKE A POSTCARD.</h2>
+            <p>Designed to look beautiful from your table, not just the camera.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER (same as index) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">CAFES</div>
+                <p class="small">Handcrafted desserts & specialty coffee.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="highlights.html">Highlights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p class="small">Instagram • Facebook • X</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © <span id="year"></span> CAFES — All rights reserved.
+        </div>
+    </footer>
+
+    <!-- 1. Bootstrap JS (must be first) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 2. Your custom JS (separate tag) -->
+    <script>
+
+
+        /* ----------------------------------------------------
+           MOBILE HAMBURGER + SIDEBAR
+        ---------------------------------------------------- */
+
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        });
+
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function scrollToInteriorGrid() {
+            const el = document.getElementById('interior-grid');
+            if (!el) return;
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Simple scroll reveal for .fade-in-up
+        const revealEls = document.querySelectorAll('.fade-in-up');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('is-visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            revealEls.forEach(el => io.observe(el));
+        } else {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        }
+
+        // Optional: click mood pills to “ping”
+        const moodPills = document.querySelectorAll('.mood-pill');
+        moodPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pill.classList.remove('pulse');
+                void pill.offsetWidth; // restart animation
+                pill.classList.add('pulse');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
